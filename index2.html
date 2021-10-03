@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador</title>
+  <link rel="stylesheet" href="style2.css">
+  <link rel="shortcut icon" href="melan2.ico" type="image/x-icon">
+ <!--  <link rel="stylesheet" href="melan.js"> -->
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <h1>Melan.cia</h1>
+            <ul class="navbar">
+                <li ><a href="index.html">Início</a></li>
+                <li class="active"> <a href="index2.html">Simulador</a></li>;
+                <li>|</li>
+                <li>Login</li>
+                <li>Cadastro</li>
+            </ul>
+        </div>
+    </div>
+
+  <div id="div_f">
+
+    <div class="melan"><span class="mel">Melan</span>.<span class="ci">cia</span> <img src="https://cdn-icons-png.flaticon.com/512/2224/2224249.png" width="30px"></div>
+
+  
+    <p>Simulação de valores</p>
+
+    <span class="kilos"> Quilos de melancias: </span>
+    <input id="inp_kilo" placeholder="Quilos">
+    <br><br>
+
+    <span class="kilos">Preço do quilo: </span>
+    <input id="inp_preço" placeholder="R$ 00,00">
+
+    <br><br><br>
+
+    <button onclick="bt_cal()" id="botao">
+      Calcular valores
+    </button>
+    <br><br><br>
+
+    <div id="div_men" class="divmen">
+    </div>
+
+  </div>
+</body>
+
+</html>
+<script>
+  function bt_cal() {
+    var kilo = Number(inp_kilo.value);
+    var preço = Number(inp_preço.value);
+
+
+    var lucro = kilo * preço;
+    var perda = lucro * 0.4;
+    var ganho = lucro + perda;
+
+    div_men.innerHTML = `Os seus ganhos a mais serão de: R$ ${perda}. (40%)
+   <br> 
+  Totalizando em lucro R$ ${ganho}`;
+  }
+
+
+
+
+
+
+
+</script>

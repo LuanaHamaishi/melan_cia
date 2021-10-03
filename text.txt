@@ -1,0 +1,19 @@
+
+      <div class="curiosidade">
+            7 fatos interessantes sobre a Melancia Tecnicamente, ela é uma fruta e um vegetal Ela é um alimento  <br>
+            altamente nutritivo Todas as partes da melancia é comestível (casca, sementes, polpa) Acredita-se que os antigos egípcios foram a  <br>
+            primeira nação a produzir melancias em grande escala, principalmente as usando como fontes de água durante períodos de seca
+            <br>
+            . As variedades sem sementes são as preferidas, sendo a maior parte das melancias vendidas nos EUA. As melancias são plantas anuais
+            <br>
+             e a maioria das variedades podem ser colhida 80-100 dias após o plantio A melancia mais pesada já vista possuía 159kg (350,5lbs), 
+             <br>
+             porém a maioria das variedades de melancias produzidas pesam aproximadamente 6 a 12kg (13-26lbs).
+             <br>
+        </div>
+
+        /* .curiosidade {
+    font-size: 20px;
+    margin-top:3vh ;
+
+} */

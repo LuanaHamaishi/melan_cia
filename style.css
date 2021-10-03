@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: url("melancia.jpg") no-repeat;
+    height: 100vh;
+    background-size: 100%;
+    background-position: center; 
+    border-bottom: rgb(43, 155, 20) solid 5px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    
+  } 
+
+.header{
+  
+    height: 100px;
+    border-bottom: rgb(43, 155, 20)solid 5px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.container{
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+
+.melan {
+    color: red;
+}
+
+
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar{
+    width: 40%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.header h1{
+    color: rgb(43, 155, 20);
+}
+
+.navbar li{
+    color: rgb(0, 0, 0);
+    font-weight: lighter;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.navbar .active {
+    font-weight: bolder;
+}
+
+.box_content{
+    height: fit-content;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vh;
+}
+
+.aboutus {
+    font-size: 20px;
+    font-weight: 400;
+}
