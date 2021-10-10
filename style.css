@@ -1,78 +1,176 @@
-*{
+* {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    background: url("melancia.jpg") no-repeat;
-    height: 100vh;
-    background-size: 100%;
-    background-position: center; 
-    border-bottom: rgb(43, 155, 20) solid 5px;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-    
-  } 
-
-.header{
-  
+.header {
     height: 100px;
-    border-bottom: rgb(43, 155, 20)solid 5px;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    background-image: url('melancia.jpg');
+    border-bottom: #45dd4d 5px solid;
+    box-shadow: black;
 }
 
-.container{
-    height: 100%;
+.container {
     width: 80%;
+    height: 100%;
     margin: auto;
+  
 }
 
-.melan {
-    color: red;
-}
-
-
-
-.header .container{
+.header .container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;    
 }
 
-.navbar{
-    width: 40%;
+.header h1 {
+    color: rgb(233, 88, 88);
+}
+
+.navbar {
+  
     display: flex;
+    flex-direction: row;
     list-style: none;
     justify-content: space-between;
 }
 
-.header h1{
-    color: rgb(43, 155, 20);
+.navbar li {
+    margin-right: 50px;
+    font-weight: lighter;
+    color: rgb(248, 248, 248);
 }
 
-.navbar li{
-    color: rgb(0, 0, 0);
-    font-weight: lighter;
-}
 
 .navbar li a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: whitesmoke;
 }
 
 .navbar .active {
     font-weight: bolder;
 }
 
-.box_content{
-    height: fit-content;
-    width: 50vw;
+.banner {
+    height: 750px;
+    background-image: url('melancia.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
-    flex-direction: row;
-    margin-top: 2vh;
+    justify-content: center;
+    align-items: center;
 }
 
-.aboutus {
-    font-size: 20px;
-    font-weight: 400;
+.message {
+    margin-right: 250px;
+    width: 10%;
+    color: rgb(233, 88, 88);
+    font-size: 40px;
+}
+
+.message span {
+    font-weight: bolder;
+}
+
+.proposito {
+    height: 450px;
+    background-image: url('melancia.jpg');
+}
+
+.proposito .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proposito .container h2 {
+    padding: 25px;
+    border-radius: 25px;
+    color: rgb(233, 88, 88);
+}
+
+.proposito .container .mvv div img {
+    height: 100px;
+    width: 100px;
+} 
+
+.proposito .container .mvv {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.proposito .container .mvv div {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.proposito .container .mvv div h3 {
+   color: rgb(233, 88, 88);
+   font-weight: bolder;
+   margin: 25px 0;
+}
+
+.footer {
+    background-image: url(melancia.jpg);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: #45dd4d 5px solid;
+}
+
+.footer p {
+    color: rgb(233, 88, 88);
+    font-weight: bold;
+    
+}
+
+.banner .formLogin {
+    background-color: transparent;
+    height: 350px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.banner .formLogin h2 {
+    color: rgb(233, 88, 88);
+}
+
+.banner .formLogin div {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner .formLogin div span {
+    color: rgb(233, 88, 88);
+}
+
+.banner .formLogin div input {
+    border: 2px solid rgb(233, 88, 88);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.banner .formLogin button {
+    margin-top: 20px;
+    color: rgb(79, 182, 69);
+    background-color: transparent;
+    border: rgb(233, 88, 88) 3px solid;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
 }
